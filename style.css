@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Edit This Code If You Like So */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy-img {
+  filter: blur(20px);
+  transition: 3s;
+}
+.hidden {
+  opacity: 0%;
+  display: none;
+}
+.spin {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+  border: 6px solid rgba(177, 173, 173, 0.3);
+  border-radius: 50%;
+  border-top-color: blue;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+.text-box {
+  transition: 0.5s;
+  text-align: center;
+}
+.main-h1 {
+  font-size: 60px;
+  padding-bottom: 20px 0;
+}
+.main-p {
+  font-size: 20px;
+  padding-bottom: 6px 0;
+}
+.arrow {
+  font-size: 50px;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.SMOOTH {
+  animation-name: smooth;
+  transition: 0.5s;
+}
+@keyframes smooth {
+  from {
+    bottom: 0px;
+    opacity: 1;
+  }
+  to {
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.countries {
+  /* margin-bottom: 8rem; */
+  margin-bottom: -20%;
+  display: flex;
+
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.country {
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  width: 30rem;
+  border-radius: 1rem;
+  margin: 0 3rem;
+  /* overflow: hidden; */
+}
+.error {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.highlight {
+  color: red;
+}
+.show {
+  padding-bottom: 15px;
+  padding: 13px 34px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+.neighbour::before {
+  content: 'Neighbour country';
+  width: 100%;
+  position: absolute;
+  top: -4rem;
+
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.neighbour {
+  transform: scale(0.8) translateY(1rem);
+  margin-left: 0;
+}
+
+.country__img {
+  width: 30rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.country__region {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+.btn-country {
+  border: none;
+  font-size: 2rem;
+  margin: 15px;
+  transition: 1s;
+  padding: 2rem 5rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  display: block;
+  width: 80rem;
+  margin: 4rem;
+}
+
+.images img.parallel {
+  width: 40rem;
+  margin: 2rem;
+  border: 3rem solid white;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+}

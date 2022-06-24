@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Country | Finder</title>
+  </head>
+  <body
+    onoffline="setTimeout(() => {
+alert('You Are Offline Press Ok To Reload');
+alert('Reloading....');
+setTimeout(() => {
+location.reload()
+}, 1700);
+  }, 1000)"
+  >
+    <main class="container">
+      <div class="countries lazy-img">
+        <!--         
+        <article class="country">
+          <img class="country__img" src="" />
+          <div class="country__data">
+            <h3 class="country__name">COUNTRY</h3>
+            <h4 class="country__region">REGION</h4>
+            <p class="country__row"><span>👫</span>POP people</p>
+            <p class="country__row"><span>🗣️</span>LANG</p>
+            <p class="country__row"><span>💰</span>CUR</p>
+          </div>
+        </article>
+        -->
+      </div>
+      <div class="text-box hidden">
+        <h1 class="main-h1">Country Finder</h1>
+        <p class="main-p">This Button Will Find the Country You are In</p>
+      </div>
+      <span class="arrow hidden">&darr;</span>
+      <div class="spin"></div>
+      <button class="btn-country hidden">Find Country?</button>
+      <div class="images"></div>
+    </main>
+  </body>
+</html>
